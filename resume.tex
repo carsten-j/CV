@@ -11,8 +11,10 @@
 \usepackage{amssymb}
 \usepackage[svgnames]{xcolor}
 \usepackage{hyperref}
+\usepackage{marvosym}
 
-\setmainfont[Ligatures=TeX]{Proxima Nova Alt}
+\setmainfont[Ligatures=TeX]{Apercu Light}
+\setmonofont{Apercu Mono}
 \setlength{\parindent}{0pt}
 \titleformat{\section}{\Large\scshape\raggedright\color{red}}{}{0em}{}
 \newcommand*{\greysquare}{\textcolor{gray}{\blacksquare}}
@@ -31,21 +33,22 @@
 \begin{tabular}{@{}l@{}} % @{} removes tabular outer padding
 \\
 {\Huge\scshape Carsten Jørgensen} \\[2.35ex]
-{\LARGE\scshape Senior software udvikler}
+{\LARGE\scshape lead software engineer og arkitekt}
 \end{tabular}
 \end{minipage}
 \hfill
 \begin{minipage}[t][2cm][t]{.4\textwidth}
 \hfill
+\texttt{
 \begin{tabular}{l}
 Badstuestræde 18D, 1th \\
 1209 København K \\[1ex]
-2971 2097 \\
-\href{mailto:carstenj@gmail.com}{carstenj@gmail.com} \\
-\href{http://carstenj.io/}{http://carstenj.io/}
+\Telefon{ 2971 2097} \\
+\Letter{ \href{mailto:carstenj@gmail.com}{carstenj@gmail.com}} \\
+\Mundus{ \href{http://carstenj.io/}{http://carstenj.io/}}
 \end{tabular}
+}
 \end{minipage}
-
 %==============================================================================
 % Erhvervserfaring
 %==============================================================================
@@ -57,8 +60,8 @@ Badstuestræde 18D, 1th \\
     Jan 2016 -- % chktex 8
   \end{Cell}
   \begin{Cell}{3}
-    Ansat i Derivative Risk and IT teamet, hvor jeg har arbejder med \\ [1ex]
-    $\greysquare$ full-stack udvikling af bankens post trade services til interne og eksterne kunder \\
+    Ansat i Derivative Risk and IT, hvor jeg arbejder med \\ [1ex]
+    $\greysquare$ full-stack udvikling af post trade services til både internt brug og eksterne kunder \\
     $\greysquare$ udvikling og devops på bankens interne model til Value-at-Risk beregninger \\
   \end{Cell}
 \end{Row}
@@ -69,7 +72,7 @@ Badstuestræde 18D, 1th \\
     Nov 2014 -- Dec 2015 % chktex 8
   \end{Cell}
   \begin{Cell}{3}
-    I min rolle som løsningsarkitekt var det mit ansvar at \\ [1ex]
+    I rollen som løsningsarkitekt var det mit ansvar at \\ [1ex]
     $\greysquare$ sikre den tekniske leverance, herunder arkitekturen, for det kommende nationale kreditregister med særlig fokus på IT-sikkerhed og datamængder \\
     $\greysquare$ bidrage til, at Nationalbankens IT-systemer udvikler sig konsistent og i samme retning
   \end{Cell}
@@ -77,13 +80,13 @@ Badstuestræde 18D, 1th \\
 \\[0.5cm]
 \begin{Row}
   \begin{Cell}{1}
-    \textbf{Software udvikler \\
+    \textbf{Softwareudvikler \\
     og arkitekt} \\ [1ex]
     Edlund A/S \\
     Dec 2008 -- Okt 2014 % chktex 8
   \end{Cell}
   \begin{Cell}{3}
-    Som software udvikler og arkitekt var det min opgave at udvikle software baseret på forsikringsmatematiske principper og \\ [1ex]
+    Som softwareudvikler og arkitekt var det min opgave at udvikle software baseret på forsikringsmatematiske principper og \\ [1ex]
     $\greysquare$ sparre med PFA's forretningsanalytikere omkring krav til PFA$+$ samt udvikle og
     implementere den overordnede arkitektur og løsning primært omkring Unitlink \\
     $\greysquare$ deltage i udviklingen af nyt standard rammesystem til Nordea Liv og Pension \\
@@ -136,7 +139,7 @@ Badstuestræde 18D, 1th \\
 \\[0.5cm]
 \begin{Row}%
   \begin{Cell}{1}
-    \textbf{Software udvikler} \\ [1ex]
+    \textbf{Softwareudvikler} \\ [1ex]
     SimCorp \\
     Aug 1995 -- Sept 1997 % chktex 8
   \end{Cell}
@@ -158,7 +161,9 @@ Badstuestræde 18D, 1th \\
     2002 -- 2006 % chktex 8
   \end{Cell}
   \begin{Cell}{3}
-    IT Universitetet. Kurser i database og distribuerede systemer, algoritmer og datastrukturer, programmeringssprog samt avanceret objekt-orienteret programmering
+    IT Universitetet. Kurser i database og distribuerede systemer, algoritmer og
+    datastrukturer, programmeringssprog samt avanceret objekt-orienteret
+    programmering
   \end{Cell}
 \end{Row}
 \\[0.5cm]
@@ -168,7 +173,9 @@ Badstuestræde 18D, 1th \\
     1999
   \end{Cell}
   \begin{Cell}{3}
-    Courant Institute of Mathematical Sciences, New York University. Mathematics of Finance program. Finansieret af Andersens Rejselegat for Matematikere.
+    Courant Institute of Mathematical Sciences, New York University. Mathematics
+    of Finance program. Vært Marco Avellaneda. Modtager af Andersens Rejselegat
+    for Matematikere.
   \end{Cell}
 \end{Row}
 \\[0.5cm]
@@ -202,7 +209,8 @@ Badstuestræde 18D, 1th \\
     og frameworks
   \end{Cell}
   \begin{Cell}{3}
-    Produktionserfaring med: C\#, .NET, WCP, WPF, LINQ, Rx, SQL, C++, STL, Boost og C Derudover: kendskab til F\#, Scala, Java, JavaScript, R og MongoDB % chktex 26,
+    Produktionserfaring med: C\#, .NET, WCP, WPF, LINQ, Rx, SQL, C++, STL, Boost % chktex 26,
+    og C Derudover: kendskab til F\#, Scala, Python, Java, JavaScript, R og MongoDB
   \end{Cell}
 \end{Row}
 \\[0.5cm]
@@ -212,7 +220,8 @@ Badstuestræde 18D, 1th \\
     og platforme
   \end{Cell}
   \begin{Cell}{3}
-    Visual Studio Windows, SQL Server, Git, Github, Mercurial, TFS, Nunit, ReSharper og Rstudio
+    Visual Studio, SQL Server, Git, Github, Mercurial, TFS, Nunit, Xamarin
+    Studio, ReSharper og RStudio
   \end{Cell}
 \end{Row}
 \\[0.5cm]
@@ -221,7 +230,13 @@ Badstuestræde 18D, 1th \\
     Kort fortalt
   \end{Cell}
   \begin{Cell}{3}
-    20+ års erfaring med professionel software udvikling af large scale systemer til primært til den finansielle sektor. Erfaring med matematisk modellering indenfor områderne finans, optimering og supply chain management. Omfattende forretningsviden på tre områder: pension (6 år), finans og bank (9 år) og ERP systemer (5 år). Mit kendetegn er levering til tiden i den ønskede kvalitet mens min største styrke er at kunne fungere som bindeled mellem forretning og udvikling.
+    21+ års erfaring med professionel software udvikling af large scale systemer
+    til primært til den finansielle sektor. Erfaring med matematisk modellering
+    indenfor områderne finans, optimering og supply chain management. Omfattende
+    forretningsviden på tre områder: pension (6 år), finans, bank og capital
+    markets (10 år) og ERP systemer (5 år). Mit kendetegn er levering til tiden
+    i den ønskede kvalitet mens min største styrke er at kunne fungere som
+    bindeled mellem forretning og udvikling.
   \end{Cell}
 \end{Row}
 
@@ -231,10 +246,18 @@ Badstuestræde 18D, 1th \\
 \section{Udvalgte kurser}
 \begin{Row}%
   \begin{Cell}{1}
+    2017
+  \end{Cell}
+  \begin{Cell}{3}
+    Implementing Domain-Driven Design Workshop med Vaughn Vernon
+  \end{Cell}
+\end{Row}
+\\[0.5cm]\begin{Row}%
+  \begin{Cell}{1}
     2015
   \end{Cell}
   \begin{Cell}{3}
-    Advanced Distributed Systems Design using SOA \& DDD
+    Advanced Distributed Systems Design med Udi Dahan
   \end{Cell}
 \end{Row}
 \\[0.5cm]
@@ -252,7 +275,7 @@ Badstuestræde 18D, 1th \\
     2013
   \end{Cell}
   \begin{Cell}{3}
-    Principles of Reactive Programming. Coursera
+    Principles of Reactive Programming med Martin Odersky. Coursera
   \end{Cell}
 \end{Row}
 \\[0.5cm]
@@ -275,7 +298,8 @@ Badstuestræde 18D, 1th \\
 \end{Row}
 
 \section{Anbefaling og referencer}
-Se venligst min \href{https://dk.linkedin.com/in/carstenjoergensen}{LinkedIn} profil for en række anbefalinger.
+Se venligst min \href{https://dk.linkedin.com/in/carstenjoergensen}{LinkedIn}
+profil for en række anbefalinger.
 \\[0.25cm]
 Personlige referencer med tidligere ledere på forespørgsel.
 \end{document}
