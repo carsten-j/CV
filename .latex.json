@@ -2,7 +2,7 @@
   "projectPath": "/Users/carsten/Projects/resume",
   "title": "LaTeX-Plus Project",
   "root": "resume.tex",
-  "program": "pdflatex",
+  "program": "lualatex",
   "latexmkOptions": "-bibtex -pdf -shell-escape",
   "output": ".latex",
   "openOutput": "true",
