@@ -1,359 +1,149 @@
 %!TEX program = lualatex
 \documentclass[10pt, a4paper]{article}
-
-\usepackage{fontspec}
-\usepackage{polyglossia}
-\usepackage[left=1.5cm, right=1.5cm, vmargin=1.5cm, noheadfoot, marginparwidth=0cm]{geometry}
-\usepackage[final]{microtype}
-\usepackage{titlesec}
-\usepackage{color}
-\usepackage{grid-system}
-\usepackage{amssymb}
-\usepackage[svgnames]{xcolor}
-\usepackage{hyperref}
-\usepackage{marvosym}
-
-\setmainfont[Ligatures=TeX]{Calibri}
-\setmonofont{Alma Mono}
-\setlength{\parindent}{0pt}
-\titleformat{\section}{\Large\scshape\raggedright\color{red}}{}{0em}{}
-\newcommand*{\greysquare}{\textcolor{gray}{\blacksquare}}
-\hypersetup{
-     colorlinks   = true,
-     citecolor    = gray,
-     urlcolor=Blue
-}
+\include{setup}
 
 \begin{document}
-
 %===============================================================================
 % Kontakt info
 %===============================================================================
-\begin{minipage}[t][2cm][t]{.5\textwidth}
-\begin{tabular}{@{}l@{}} % @{} removes tabular outer padding
-\\
-{\Huge\scshape Carsten Jørgensen} \\[2.35ex]
-{\LARGE\scshape lead software engineer og arkitekt}
-\end{tabular}
-\end{minipage}
-\hfill
-\begin{minipage}[t][2cm][t]{.4\textwidth}
-\hfill
-\texttt{
-\begin{tabular}{l}
-Badstuestræde 18D, 1th \\
-1209 København K \\[1ex]
-\Telefon{ +45 2971 2097} \\
-\Letter{ \href{mailto:carstenj@gmail.com}{carstenj@gmail.com}} \\
-\Mundus{ \href{http://carstenj.io/}{http://carstenj.io/}}
-\end{tabular}
-}
-\end{minipage}
+\contactinfo{Carsten Jørgensen}
+{Lead Software Engineer og Arkitekt}
+{Badstuestræde 18D, 1th}
+{1209 København K}
+{+45 2971 2097}
+{\href{mailto:carstenj@gmail.com}{carstenj@gmail.com}}
+{\href{http://carstenj.io/}{http://carstenj.io/}}
 %==============================================================================
-% Erhvervserfaring
+% Introduktion
 %==============================================================================
 \section{Kort fortalt}
-22+ års erfaring med professionel software udvikling af large scale systemer primært til den finansielle sektor. Erfaring med matematisk modellering
-indenfor områderne finans, optimering og supply chain management. Omfattende
-forretningsviden på områderne pension (6 år), finans, bank og capital
-markets (11 år) samt ERP systemer (5 år). Mit kendetegn er levering til tiden
-i den ønskede kvalitet mens min største styrke er at kunne fungere som
-bindeled mellem forretning og udvikling.
+23 års erfaring med professionel software udvikling af large scale systemer primært til den finansielle sektor. Erfaring med matematisk baseret software indenfor områderne finans, optimering og supply chain management. Omfattende forretningsviden på områderne pension (6 år), finans, bank og capital markets (12 år) samt ERP systemer (5 år). Mit kendetegn er levering til tiden i den ønskede kvalitet, mens min største styrke er at kunne fungere som bindeled mellem forretning og udvikling.
 
 %==============================================================================
 % Erhvervserfaring
+% titel, virksomhed, periode, beskrivelse, liste af opgaver
 %==============================================================================
 \section{Erhvervserfaring}
-\begin{Row}%
-  \begin{Cell}{1}
-    \textbf{Lead Software Engineer} \\ [1ex]
-    Danske Bank \\
-    Jan 2016 -- % chktex 8
-  \end{Cell}
-  \begin{Cell}{3}
-    Ansat i Derivative Risk and IT, hvor jeg arbejder med \\ [1ex]
-    $\greysquare$ 360-graders udvikling af post trade services til både internt
-    brug og eksterne kunder \\
-    $\greysquare$ udvikling og devops på bankens interne model til Value-at-Risk
-     beregninger \\
-  \end{Cell}
-\end{Row}
-\\[0.5cm]\begin{Row}%
-  \begin{Cell}{1}
-    \textbf{Løsningsarkitekt} \\ [1ex]
-    Danmarks Nationalbank \\
-    Nov 2014 -- Dec 2015 % chktex 8
-  \end{Cell}
-  \begin{Cell}{3}
-    I rollen som løsningsarkitekt var det mit ansvar at \\ [1ex]
-    $\greysquare$ sikre den tekniske leverance, herunder arkitekturen, for det
-    kommende nationale kreditregister med særlig fokus på IT-sikkerhed og
-    datamængder \\
-    $\greysquare$ bidrage til, at Nationalbankens IT-systemer udvikler sig
-    konsistent og i samme retning
-  \end{Cell}
-\end{Row}
-\\[0.5cm]
-\begin{Row}
-  \begin{Cell}{1}
-    \textbf{Softwareudvikler \\
-    og arkitekt} \\ [1ex]
-    Edlund A/S \\
-    Dec 2008 -- Okt 2014 % chktex 8
-  \end{Cell}
-  \begin{Cell}{3}
-    Som softwareudvikler og arkitekt var det min opgave at udvikle software
-    baseret på forsikringsmatematiske principper og \\ [1ex]
-    $\greysquare$ sparre med PFA's forretningsanalytikere omkring krav til
-    PFA$+$ samt udvikle og implementere den overordnede arkitektur og løsning
-    primært omkring Unitlink \\
-    $\greysquare$ deltage i udviklingen af nyt standard rammesystem til Nordea
-    Liv og Pension \\
-    $\greysquare$ have den daglige kontakt til Skandia og ansvaret for udvikling
-    af deres kundespecifikke ønsker
-  \end{Cell}
-\end{Row}
-\\[0.5cm]
-\begin{Row}%
-  \begin{Cell}{1}
-    \textbf{Software udvikler} \\ [1ex]
-    Microsoft \\
-    Mar 2003 -- Nov 2008 % chktex 8
-  \end{Cell}
-  \begin{Cell}{3}
-    I mine 5 år hos Microsoft arbejdede jeg på tre større projekter, hvor
-    jeg \\ [1ex]
-    $\greysquare$ havde ansvaret for front-end delen af en ny ``Sales and
-    Operations Planning'' feature til næste version af AX \\
-    $\greysquare$ havde medansvar i AX-kerneudvikling til Microsoft Dynamics AX
-    4.0 \\
-    $\greysquare$ deltog i udviklingen af innovativt ERP prototype projekt
-    baseret på SOA arkitektur og en rolle baseret konfigurerbar opsætning af
-    forretningsprocesser.
-  \end{Cell}
-\end{Row}
-\\[0.5cm]
-\begin{Row}%
-  \begin{Cell}{1}
-    \textbf{Chief Financial \\
-    Consultant} \\ [1ex]
-    SimCorp \\
-    Okt 2000 -- Feb 2003 % chktex 8
-  \end{Cell}
-  \begin{Cell}{3}
-    I den afdeling som har ansvaret for matematisk finansielle beregninger i
-    SimCorp Dimension var det min opgave at \\ [1ex]
-    $\greysquare$ deltage i refaktoreringen af beregningsmotoren fra C til C$++$
-    med primært ansvar for optimeringsalgoritmer \\
-    $\greysquare$ være ansvarlig for afdelingen software releases og
-    konfigurationsstyring
-  \end{Cell}
-\end{Row}
-\\[0.5cm]
-\begin{Row}%
-  \begin{Cell}{1}
-    \textbf{Senior Kvantitativ \\
-    Analytiker} \\ [1ex]
-    Nordea Markets \\
-    Oct 1997 -- Sep 2000 % chktex 8
-  \end{Cell}
-  \begin{Cell}{3}
-    Som analytiker var jeg med til at \\ [1ex]
-    $\greysquare$ udvikle funktionalitet og Excel løsninger til Nordea Analytics
-    platformen \\
-    $\greysquare$ udvikle Markets interne system til realkreditmodellering \\
-    $\greysquare$ implementere, teste og konvertere et ældre system til Infinity
-    Financial Technology systemet med ansvar for rentederivater
-  \end{Cell}
-\end{Row}
-\\[0.5cm]
-\begin{Row}%
-  \begin{Cell}{1}
-    \textbf{Softwareudvikler} \\ [1ex]
-    SimCorp \\
-    Aug 1995 -- Sept 1997 % chktex 8
-  \end{Cell}
-  \begin{Cell}{3}
-    Som software udvikler var det min opgave at deltage i \\ [1ex]
-    $\greysquare$ den årlige release af en række Excel add-ins \\
-    $\greysquare$ koordineringen af en tværafdelings udviklingsopgave af et
-    modul til Ka\-pi\-tal\-dæk\-nings\-di\-rek\-ti\-vet \\
-    $\greysquare$ udviklingen af matematisk finansielt bibliotek i C med
-    tilhørende unit tests
-  \end{Cell}
-\end{Row}
+
+\job{Lead Software Engineer}{Danske Bank, C\&I}{Jan 2016 --}
+{Ansat i Derivative Risk and IT, hvor jeg arbejder med 360-graders udvikling af}
+{
+\opgave{Client Clearing for OTC og ETD produkter (Lead Dev)}
+\opgave{MiFID II post-trade transparency rapportering (Lead Dev)}
+\opgave{post-trade services til både internt brug og eksterne kunder}
+\opgave{bankens interne model til Value-at-Risk beregninger}
+}
+
+\job{Løsningsarkitekt}{Danmarks Nationalbank}{Nov 2014 -- Dec 2015} %chktex 8
+{I rollen som løsningsarkitekt var det mit ansvar at}
+{
+\opgave{sikre den tekniske leverance for det kommende nationale kre\-dit\-re\-gis\-ter med særlig fokus på arkitektur, IT-sikkerhed og datamængder}
+\opgave{bidrage til, at Nationalbankens IT-systemer udvikler sig konsistent og i samme retning}
+}
+
+\job{Softwareudvikler og \\ arkitekt}{Edlund A/S}{Dec 2008 -- Okt 2014} %chktex 8
+{Som softwareudvikler og arkitekt var det min opgave at udvikle software baseret på forsikringsmatematiske principper og}
+{
+\opgave{sparre med PFA's forretningsanalytikere omkring krav til PFA\(+\) samt udvikle og implementere den overordnede arkitektur og løsning primært omkring Unitlink}
+\opgave{deltage i udviklingen af nyt standard rammesystem til Nordea
+Liv og Pension}
+\opgave{have den daglige kontakt til Skandia og ansvaret for udvikling af deres kundespecifikke ønsker}
+}
+
+\job{Softwareudvikler}{Microsoft}{Mar 2003 -- Nov 2008} %chktex 8
+{I mine 5 år hos Microsoft arbejdede jeg på tre større projekter, hvor jeg}
+{
+\opgave{havde ansvaret for front-end delen af en ny ``Sales and Operations Planning'' feature til næste version af AX}
+\opgave{havde medansvar i AX-kerneudvikling til Microsoft Dynamics AX 4.0}
+\opgave{deltog i udviklingen af innovativt ERP prototype projekt baseret på SOA arkitektur og en rolle baseret konfigurerbar opsætning af forretningsprocesser.}
+}
+
+\job{Chief Financial \\ Consultant}{SimCorp}{Okt 2000 -- Feb 2003} %chktex 8
+{I den afdeling som har ansvaret for matematisk finansielle beregninger i SimCorp Dimension var det min opgave at}
+{
+\opgave{deltage i refaktoreringen af beregningsmotoren fra C til C\(++\) med primært ansvar for optimeringsalgoritmer}
+\opgave{være ansvarlig for teamets software releases og konfigurationsstyring}
+}
+
+\job{Senior Kvantitativ \\ Analytiker}{Nordea Markets}{Oct 1997 -- Sep 2000} %chktex 8
+{Som analytiker var jeg med til at}
+{
+\opgave{udvikle funktionalitet og Excel løsninger til Nordea Analytics platformen}
+\opgave{udvikle Markets interne system til realkreditmodellering}
+\opgave{implementere, teste og konvertere et ældre system til Infinity Financial Technology systemet med ansvar for rentederivater}
+}
+
+\job{Softwareudvikler}{SimCorp}{Aug 1995 -- Sept 1997} %chktex 8
+{Som software udvikler var det min opgave at deltage i}
+{
+\opgave{den årlige release af en række Excel add-ins}
+\opgave{koordineringen af en tværafdelings udviklingsopgave af et modul til Ka\-pi\-tal\-dæk\-nings\-di\-rek\-ti\-vet}
+\opgave{udviklingen af matematisk finansielt bibliotek i C med tilhørende unit tests}
+}
 
 %===============================================================================
 % Uddannelse afsnit
 %===============================================================================
 \section{Uddannelse}
-\begin{Row}%
-  \begin{Cell}{1}
-    \textbf{Softwareudvikling} \\[1ex]
-    2002 -- 2006 % chktex 8
-  \end{Cell}
-  \begin{Cell}{3}
-    IT Universitetet. Kurser i database og distribuerede systemer, algoritmer og
-    datastrukturer, programmeringssprog samt avanceret objekt-orienteret
-    programmering
-  \end{Cell}
-\end{Row}
-\\[0.5cm]
-\begin{Row}%
-  \begin{Cell}{1}
-    \textbf{Visiting Member} \\[1ex]
-    1999
-  \end{Cell}
-  \begin{Cell}{3}
-    Courant Institute of Mathematical Sciences, New York University. Mathematics
-    of Finance program. Vært Marco Avellaneda. Modtager af Andersens Rejselegat
-    for Matematikere.
-  \end{Cell}
-\end{Row}
-\\[0.5cm]
-\begin{Row}%
-  \begin{Cell}{1}
-    \textbf{Erasmus udvekslings-\\ program} \\[1ex]
-    1992 -- 1993 % chktex 8
-  \end{Cell}
-  \begin{Cell}{3}
-    University of Leeds, England. Anvendt statistik og ikke-kommutativ algebra
-  \end{Cell}
-\end{Row}
-\\[0.5cm]
-\begin{Row}%
-  \begin{Cell}{1}
-    \textbf{Cand.Scient. Matematik \\ og Statistik} \\[1ex]
-    1988 -- 1995 % chktex 8
-  \end{Cell}
-  \begin{Cell}{3}
-    Københavns Universitet. Numerisk analyse og målteori
-  \end{Cell}
-\end{Row}
+\uddannelse{Softwareudvikling}{2002 -- 2006}{IT Universitetet. Kurser i database og distribuerede systemer, algoritmer og datastrukturer, programmeringssprog samt avanceret objekt-orienteret programmering} %chktex 8
+\\[0.25cm]
+\uddannelse{Visiting Member}{1999}{Courant Institute of Mathematical Sciences, New York University. Mathematics of Finance program. Vært Marco Avellaneda. Modtager af Andersens Rejselegat for Matematikere}
+\\[0.25cm]
+\uddannelse{Erasmus program}{1992 -- 1993}{University of Leeds, England. Anvendt statistik og ikke-kommutativ algebra} %chktex 8
+\\[0.25cm]
+\uddannelse{Cand. Scient}{1988 -- 1995}{Københavns Universitet. Hovedfag i matematik og bifag i statistik. Fokusområder: Numerisk analyse og målteori} %chktex 8
 
 %===============================================================================
 % Kompetencer
 %===============================================================================
 \section{Kompetencer}
-\begin{Row}%
-  \begin{Cell}{1}
-    Programmingssprog \\[1ex]
-    og frameworks
-  \end{Cell}
-  \begin{Cell}{3}
-    Produktionserfaring med: C\#, .NET, WCP, WPF, LINQ, Rx, SQL, Nunit,  % chktex 26,
-    C++, STL, Boost og C \\
-    Derudover kendskab til F\#, Scala, Python, Java, JavaScript og R
-  \end{Cell}
-\end{Row}
-\\[0.5cm]
-\begin{Row}%
-  \begin{Cell}{1}
-    Udviklingsværktøjer
-  \end{Cell}
-  \begin{Cell}{3}
-    Visual Studio, Visual Studio Code, SQL Server Management Studio, Xamarin
-    Studio, ReSharper og RStudio
-  \end{Cell}
-\end{Row}
-\\[0.5cm]
-\begin{Row}%
-  \begin{Cell}{1}
-    Data systemer
-  \end{Cell}
-  \begin{Cell}{3}
-    SQL Server, RabbitMQ og MongoDB
-  \end{Cell}
-\end{Row}
-\\[0.5cm]\begin{Row}%
-  \begin{Cell}{1}
-    DevOps tools
-  \end{Cell}
-  \begin{Cell}{3}
-    Elastic Stack, Serilog, InfluxDB, Grafana, GoCD, Git, Github, Mercurial, TFS
-  \end{Cell}
-\end{Row}
+\kompetence{Programmingssprog \\ og frameworks}{Produktionserfaring med: C\#, .NET, WCP, WPF, LINQ, C\(++\), STL, Boost og C \\ Derudover kendskab til F\#, Scala, Python, Java, JavaScript og R}
+\\[0.2cm]
+\kompetence{Data systemer}{SQL Server, MongoDB, Redis, RabbitMQ og Kafka}
+\\[0.2cm]
+\kompetence{Favorit Nuget pakker}{Serilog, Rx, Akka, Polly, Dapper, XUnit, BenchmarkDotNet, Newtonsoft.Json}
+\\[0.2cm]
+\kompetence{DevOps tools}{Elastic Stack, InfluxDB, Grafana, GoCD, Git, Mercurial, TFS, Icinga2, VictorOps}
 
 %===============================================================================
 % Kurser
 %===============================================================================
+\begin{onehalfspacing}
 \section{Udvalgte kurser}
-\begin{Row}%
-  \begin{Cell}{1}
-    2017
-  \end{Cell}
-  \begin{Cell}{3}
-    Implementing Domain-Driven Design Workshop med Vaughn Vernon
-  \end{Cell}
-\end{Row}
-\\[0.5cm]\begin{Row}%
-  \begin{Cell}{1}
-    2015
-  \end{Cell}
-  \begin{Cell}{3}
-    Advanced Distributed Systems Design med Udi Dahan
-  \end{Cell}
-\end{Row}
-\\[0.5cm]
-\begin{Row}%
-  \begin{Cell}{1}
-    2014
-  \end{Cell}
-  \begin{Cell}{3}
-    Grundlæggende livsforsikringsmatematik (Liv1). Københavns Universitet
-  \end{Cell}
-\end{Row}
-\\[0.5cm]
-\begin{Row}%
-  \begin{Cell}{1}
-    2013
-  \end{Cell}
-  \begin{Cell}{3}
-    Principles of Reactive Programming med Martin Odersky. Coursera
-  \end{Cell}
-\end{Row}
-\\[0.5cm]
-\begin{Row}%
-  \begin{Cell}{1}
-    2012
-  \end{Cell}
-  \begin{Cell}{3}
-    Essential SQL Server 2012 for Developers. DevelopMentor
-  \end{Cell}
-\end{Row}
-\\[0.5cm]
-\begin{Row}%
-  \begin{Cell}{1}
-    2010
-  \end{Cell}
-  \begin{Cell}{3}
-    Certificeret SCRUM master. Trifork A/S
-  \end{Cell}
-\end{Row}
+\kursus{2018}{Fast Track to Chaos Engineering med Russ Miles}
 
+\kursus{2017}{Implementing Domain-Driven Design Workshop med Vaughn Vernon}
+
+\kursus{2015}{Advanced Distributed Systems Design med Udi Dahan}
+
+\kursus{2014}{Grundlæggende livsforsikringsmatematik (Liv1). Københavns Universitet}
+
+\kursus{2013}{Principles of Reactive Programming med Martin Odersky. Coursera}
+
+\kursus{2012}{Essential SQL Server 2012 for Developers. DevelopMentor}
+
+\kursus{2010}{Certificeret SCRUM master. Trifork A/S}
+
+\end{onehalfspacing}
+%===============================================================================
+% Frivilligt arbejde
+%===============================================================================
 \section{Frivilligt arbejde}
-\begin{Row}%
-  \begin{Cell}{1}
-    \textbf{Webmatematik} \\ [1ex]
-    Juni 2017 -- % chktex 8
-  \end{Cell}
-  \begin{Cell}{3}
-    Frivillig skribent på \href{http://www.webmatematik.dk}{www.webmatematik.dk}
-  \end{Cell}
-\end{Row}
-\\[0.5cm]\begin{Row}%
-  \begin{Cell}{1}
-    \textbf{Dansk Flygtningehjælp} \\ [1ex]
-    Jan 2014 -- Maj 2014 % chktex 8
-  \end{Cell}
-  \begin{Cell}{3}
-    Frivilling i lektiecafe på Vesterbros Bibliotek, hvor jeg hjalp folkeskoleelever med deres ma\-te\-ma\-tik opgaver.
-  \end{Cell}
-\end{Row}
+\uddannelse{Webmatematik}{Juni 2017 -- Maj 2018}{Skribent på \href{http://www.webmatematik.dk}{www.webmatematik.dk}} %chktex 8
+\\[0.2cm]
+\uddannelse{Dansk Flygtningehjælp}{Jan 2014 -- Maj 2014}{Lektiecafe på Vesterbros Bibliotek, hvor jeg hjalp folkeskoleelever med deres ma\-te\-ma\-tik opgaver} %chktex 8
 
+%===============================================================================
+% Anbefaling og referencer
+%===============================================================================
 \section{Anbefaling og referencer}
 Se venligst min \href{https://dk.linkedin.com/in/carstenjoergensen}{LinkedIn}
 profil for en række anbefalinger.
-\\[0.25cm]
+%\\[0.25cm]
+
 Personlige referencer med tidligere ledere på forespørgsel.
+
+\section{Personligt}
+Jeg er gift med Lene. Vi bor i centrum af København og har et lille sommerhus syd for Tisvilde Hegn. I min fritid dyrker jeg løb, svømning, crossfit og yoga.
+
 \end{document}
