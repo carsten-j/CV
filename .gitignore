@@ -6,3 +6,4 @@
 *.fls
 .latex
 .texpadtmp/
+.DS_store
