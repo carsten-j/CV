@@ -11,8 +11,8 @@
 \usepackage{hyperref} % hyper links
 \usepackage{marvosym} % symboler for telefon, email m.v.
 \usepackage{nopageno} % undlad side-nummer
-%\usepackage{coffee4}
 \usepackage{setspace}
+\usepackage{graphicx}
 
 \definecolor{linkColor}{HTML}{408AF8}
 \definecolor{bulletColor}{HTML}{3681C4} % 1D8BB9 336F3A
@@ -34,14 +34,18 @@
 
 \newcommand*{\contactinfo}[7]{
 \begin{minipage}[t][1.5cm][t]{.5\textwidth}
-\begin{tabular}{@{}l@{}} % The @{} at start and end removes the outer padding
-{\huge\scshape\bfseries #1} \\[2ex]
-{\Large\scshape #2}
-\end{tabular}
+  \begin{tabular}{@{}l@{}} % The @{} at start and end removes the outer padding
+    {\huge\scshape\bfseries #1} \\[2ex]
+    {\Large\scshape #2}
+  \end{tabular}
+\end{minipage}
+\begin{minipage}{0.12\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{carsten}
 \end{minipage}
 \hfill
 \begin{minipage}[t][1.5cm][t]{.5\textwidth}
-\hfill
+% \hfill
 \texttt{
 \begin{tabular}{l}
 #3 \\
